@@ -12,9 +12,9 @@ const Story = (props) => {
           <h3>{props.title}</h3>
           <p>{props.desc}</p>
         </div>
-        <Author authName={props.authName} authImg={props.authImg} estTime={props.estTime} />
         {/* create an Author component and add it here */}
         {/* it will need properties of the author image, name, and the estimated reading time of the story */}
+        <Author authName={props.authName} authImg={props.authImg} estTime={props.estTime} />
       </div>
     </div>
   )

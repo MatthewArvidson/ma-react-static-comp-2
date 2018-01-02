@@ -20,3 +20,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 820px){
+  .stories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 350px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1065px){
+  .Stories {
+    width: 90%;
+  }
+}
