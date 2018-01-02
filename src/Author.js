@@ -1,3 +1,6 @@
+import React from 'react';
+import './Author.css';
+
 // Create an Author component
 <div className='story-author-info'>
   <img src={props.authImg} className='story-author-image' />
@@ -6,3 +9,5 @@
     <h4>{props.estTime} read</h4>
   </div>
 </div>
+
+export default Author;
