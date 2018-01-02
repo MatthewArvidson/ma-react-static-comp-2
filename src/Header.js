@@ -1,10 +1,12 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className='Header'>
-      {/* What goes in here? */}
+        <a>Write a story</a>
+        <h1>{props.Headline}</h1>
+        <a>Sign in / Sign up</a>
     </div>
   )
 }

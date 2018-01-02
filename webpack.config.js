@@ -13,13 +13,13 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react'],
         },
       },
-      { test: /\.css$/, loader: 'style!css' },
-      { test: /\.scss$/, loader: 'style!css!sass' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
       {
         test: /\.(png|svg|jpg|gif)$/,
         loader: 'file-loader'
@@ -27,6 +27,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
-  },
-};
+    extensions: ['.js', '.jsx', '.json', '.scss', '.css'],
+  }
+}
