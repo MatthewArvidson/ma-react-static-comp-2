@@ -7,34 +7,34 @@ import './App.css';
 
 const stories = [
   {
-    img: './story1.jpg',
-    title: 'Winning at Fonts',
-    desc: 'or, Why you should care about typography',
-    authImg: './louisa.png',
+    img: '../public/story1.jpg',
+    title: 'Why Are Fonts?',
+    desc: 'They are. You\'re a font',
+    authImg: '../public/louisa.png',
     authName: 'Louisa',
     estTime: '2 min'
   },
   {
-    img: './story2.jpg',
-    title: 'Hoodlums: a dissertation',
-    desc: 'Examining villains in modern storytelling',
-    authImg: './alternate.png',
+    img: '../public/story2.jpg',
+    title: 'Do Everything!',
+    desc: 'Instantly, or even faster!',
+    authImg: '../public/alternate.png',
     authName: 'Nathaniel',
     estTime: '10 min'
   },
   {
-    img: './story3.jpg',
-    title: 'Halloween is a year-round sport',
-    desc: 'Those who say otherwise just aren\'t trying hard enough.',
-    authImg: './leta.png',
+    img: '../public/story3.jpg',
+    title: 'Are Fish Really Just Wet Vegetables?',
+    desc: 'A deep dive into aquatic politics.',
+    authImg: '../public/leta.png',
     authName: 'Leta',
     estTime: '8 min'
   },
   {
-    img: './story4.jpg',
-    title: 'How to Improve Learning and Classroom Engagement with Humor',
-    desc: 'Okay, so first of all, everybody knows fart jokes are hilarious ...',
-    authImg: './pamela.png',
+    img: '../public/story4.jpg',
+    title: 'Realistic Music Titles',
+    desc: 'Titles like "I\'m Sorry", "I Love You, Kinda", and "I\'M EMOTIONAL!".',
+    authImg: '../public/pamela.png',
     authName: 'Pamela',
     estTime: '11 min'
   }
@@ -45,9 +45,9 @@ const App = () => {
     <div className='App'>
       <Header />
       <Banner />
-      <Stories  storiesTitle="Today's Top Stories"
+      <Stories  storiesTitle="Chart Toppers of Yesterday's Tomorrow"
                 stories={stories} />
-      <Stories  storiesTitle="Pop Culture"
+      <Stories  storiesTitle="You Know What I'm Talking About"
                 stories={stories} />
       <Footer />
     </div>
